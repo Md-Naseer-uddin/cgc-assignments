@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #240046;
+    color: #d2cfcfc3;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border: 0.5px solid rgba(0, 0, 255, 0.274);
+}
+
+nav>span{
+    font-size: 40px;
+    font-weight:bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul,li{
+    display: inline;
+    padding: 12px;
+}
+
+ul>li>a{
+    text-decoration: none;
+    color: #d2cfcfc3;
+    font-size: 25px;
+}
+
+ul>li>a:hover{
+    text-decoration: underline;
+    color:aqua;
+    transition: all 0.2s ease-in-out;
+}
+
+h1{
+    margin: 20px;
+    color:rgba(0, 255, 255, 0.689);
+}
+
+section{
+    display: flex;
+    gap: 20px;
+}
+
+.first,.second{
+    width: 45vw;
+    border: 0.5px solid rgba(0, 0, 255, 0.274);
+    padding: 5px;
+    margin: 25px;
+    background-color: rgba(70, 144, 146, 0.696);
+    color: rgba(14, 11, 11, 0.731);
+}
+
+.flex{
+    display: flex;
+    font-size: x-large;
+    padding: 10px;
+    color:#cce3de;
+}
+
+.p{
+    height: 15px;
+    width: 500px;
+    margin: 5px 15px;
+    background-color: black;
+    position: relative;
+}
+
+.line{
+    width: 2px;
+    height: 25px;
+    background-color: beige;
+    position: absolute;
+    bottom: -4px;    
+}
+
+.cp{
+    left: 70%;
+}
+
+.ccp{
+    left: 50%;
+}
+
+.ppy{
+    left: 95%;
+}
+
+.pjs{
+    left: 80%;
+}
+
+.pjs{
+    left: 80%;
+}
+
+.pj{
+    left: 20%;
+}
+
+.pht{
+    left: 95%;
+}
+
+.pcss{
+    left: 90%;
+}
+
+.pjs{
+    left: 80%;
+}
+
+.prs{
+    left: 10%;
+}
+
+.pm{
+    left: 10%;
+}
+
+button{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(97, 37, 152);
+    color: #d2cfcfc3;
+    font-size: x-large;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.last{
+    display: flex;
+    justify-content: center;
+}
