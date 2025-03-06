@@ -31,21 +31,24 @@ class BankAccount {
     }
 
     transfer(amt, accno) {
-        if (this.balance - amt >= 1000 ) {
+        if (this.balance - amt >= 1000) {
             this.balance -= amt;
+            var found=true;
             accounts.forEach((val) => {
                 if (val.accountNumber === accno) {
                     val.balance += amt;
+                    found=false;
                 }
 
             })
-
+            if(found){
+            throw new Error("Account not found")
         }
-        else{
-            throw new error("Minimum balance is not maintained");
-            
         }
-
+        else {
+            throw new Error("Minimum balance is not maintained");
+        }
+        
     }
 }
 var accounts = []
@@ -64,8 +67,8 @@ function createAccount(accno, bal) {
 
 }
 
-function display(){
-    accounts.forEach((val)=>{
+function display() {
+    accounts.forEach((val) => {
         console.log(val)
     })
 }
@@ -73,8 +76,8 @@ function display(){
 createAccount("IN1234567890", 5000);
 createAccount("IN0987654321", 3000);
 console.log(accounts)
-// accounts[0].deposit(2000);
-// accounts[1].withdraw(500);
-// accounts[0].transfer(2000, "IN0987654321");
-// console.log(accounts)
+accounts[0].deposit(2000);
+accounts[1].withdraw(500);
+accounts[0].transfer(2000, "IN0987654321");
+console.log(accounts)
 display()
